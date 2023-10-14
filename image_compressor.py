@@ -7,7 +7,7 @@ import os
 original_size = 0  # Initialize original_size as a global variable
 
 def browse_image():
-    initial_dir = os.path.expanduser('~') + '/Downloads'  # Set the default folder to Downloads
+    initial_dir = os.path.expanduser('~') + '/Downloads'  # Set the default folder to Downloads. Change to your desired directory
     file_path = filedialog.askopenfilename(initialdir=initial_dir, filetypes=[("Image files", "*.jpg *.jpeg *.png")])
     if file_path:
         entry_path.delete(0, tk.END)
